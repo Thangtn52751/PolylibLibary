@@ -4,9 +4,7 @@ PolyLib là một ứng dụng quản lý thư viện đa nền tảng, được
 
 Tính năng chính
 
-Quản lý sách: Cho phép thêm, sửa, và xóa sách, đồng thời phân loại sách theo các thể loại khác nhau.
-
-Quản lý thành viên: Quản lý thông tin thành viên, bao gồm tên, địa chỉ, và thông tin liên hệ.
+Quản lý sách: Cho phép thêm, sửa  sách, đồng thời phân loại sách theo các thể loại khác nhau.
 
 Quản lý mượn trả: Theo dõi các giao dịch mượn trả sách của thành viên, bao gồm ngày mượn và ngày trả.
 
