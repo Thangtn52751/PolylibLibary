@@ -1,21 +1,37 @@
 PolyLib - Ứng dụng quản lý thư viện
+
 PolyLib là một ứng dụng quản lý thư viện đa nền tảng, được phát triển bằng React Native, giúp bạn quản lý sách, thành viên và các giao dịch mượn trả sách một cách hiệu quả. Với giao diện người dùng thân thiện và tính năng mạnh mẽ, PolyLib mang đến trải nghiệm quản lý thư viện trực tuyến cho các nhà quản lý và người dùng.
 
 Tính năng chính
+
 Quản lý sách: Cho phép thêm, sửa, và xóa sách, đồng thời phân loại sách theo các thể loại khác nhau.
+
 Quản lý thành viên: Quản lý thông tin thành viên, bao gồm tên, địa chỉ, và thông tin liên hệ.
+
 Quản lý mượn trả: Theo dõi các giao dịch mượn trả sách của thành viên, bao gồm ngày mượn và ngày trả.
+
 Tìm kiếm thông minh: Hỗ trợ tìm kiếm sách và thành viên dễ dàng theo tên, thể loại hoặc tên thành viên.
+
 Bảo mật người dùng: Tích hợp hệ thống đăng nhập và mật khẩu để bảo vệ thông tin người dùng và dữ liệu thư viện.
+
 Công nghệ sử dụng
+
 React Native: Phát triển ứng dụng đa nền tảng (Android và iOS) với React Native.
+
 React Navigation: Điều hướng giữa các màn hình trong ứng dụng.
+
 MongoDB: Cơ sở dữ liệu NoSQL để lưu trữ thông tin sách, thành viên và giao dịch mượn trả.
+
 Mongoose: Thư viện Node.js để tương tác với MongoDB và định nghĩa các mô hình dữ liệu.
+
 Express.js: Framework backend để xây dựng API, xử lý yêu cầu và kết nối với MongoDB.
+
 Node.js: Môi trường chạy backend.
+
 JSON Web Tokens (JWT): Cung cấp cơ chế xác thực người dùng bảo mật.
+
 Cài đặt
+
 Cài đặt Backend (MongoDB + Express.js)
 
 Clone dự án backend về máy:
