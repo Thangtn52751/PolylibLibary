@@ -1,97 +1,50 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+PolyLib - Ứng dụng quản lý thư viện
+PolyLib là một ứng dụng quản lý thư viện đa nền tảng, được phát triển bằng React Native, giúp bạn quản lý sách, thành viên và các giao dịch mượn trả sách một cách hiệu quả. Với giao diện người dùng thân thiện và tính năng mạnh mẽ, PolyLib mang đến trải nghiệm quản lý thư viện trực tuyến cho các nhà quản lý và người dùng.
 
-# Getting Started
+Tính năng chính
+Quản lý sách: Cho phép thêm, sửa, và xóa sách, đồng thời phân loại sách theo các thể loại khác nhau.
+Quản lý thành viên: Quản lý thông tin thành viên, bao gồm tên, địa chỉ, và thông tin liên hệ.
+Quản lý mượn trả: Theo dõi các giao dịch mượn trả sách của thành viên, bao gồm ngày mượn và ngày trả.
+Tìm kiếm thông minh: Hỗ trợ tìm kiếm sách và thành viên dễ dàng theo tên, thể loại hoặc tên thành viên.
+Bảo mật người dùng: Tích hợp hệ thống đăng nhập và mật khẩu để bảo vệ thông tin người dùng và dữ liệu thư viện.
+Công nghệ sử dụng
+React Native: Phát triển ứng dụng đa nền tảng (Android và iOS) với React Native.
+React Navigation: Điều hướng giữa các màn hình trong ứng dụng.
+MongoDB: Cơ sở dữ liệu NoSQL để lưu trữ thông tin sách, thành viên và giao dịch mượn trả.
+Mongoose: Thư viện Node.js để tương tác với MongoDB và định nghĩa các mô hình dữ liệu.
+Express.js: Framework backend để xây dựng API, xử lý yêu cầu và kết nối với MongoDB.
+Node.js: Môi trường chạy backend.
+JSON Web Tokens (JWT): Cung cấp cơ chế xác thực người dùng bảo mật.
+Cài đặt
+Cài đặt Backend (MongoDB + Express.js)
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
-
-## Step 1: Start Metro
-
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
-
-To start the Metro dev server, run the following command from the root of your React Native project:
-
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+Clone dự án backend về máy:
+```bash
+git clone https://github.com/Thangtn52751/PoilyLibAPI.git
 ```
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+Cài đặt các phụ thuộc của backend:
+```bash
+npm install
 ```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+Chạy server backend:
+```bash
+nodemon server.js
 ```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
+Cài đặt Frontend (React Native)
+Clone dự án frontend về máy:
+```bash
+git clone https://github.com/username/PolyLib.git
 ```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+Cài đặt các phụ thuộc của frontend:
+```bashg
+cd PolyLib
+npm install
 ```
+Chạy ứng dụng trên thiết bị thật hoặc giả lập:
+```bash
+npx react-native run-android   # Đối với Android
+npx react-native run-ios       # Đối với iOS (macOS)
+```
+Đóng góp
+Nếu bạn muốn đóng góp vào dự án, vui lòng tạo một pull request với mô tả chi tiết về những thay đổi bạn đã thực hiện. Mọi đóng góp đều được hoan nghênh!
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
