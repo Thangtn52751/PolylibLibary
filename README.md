@@ -47,7 +47,7 @@ nodemon server.js
 Cài đặt Frontend (React Native)
 Clone dự án frontend về máy:
 ```bash
-git clone https://github.com/username/PolyLib.git
+git clone https://github.com/Thangtn52751/PolylibLibary.git
 ```
 Cài đặt các phụ thuộc của frontend:
 ```bashg
